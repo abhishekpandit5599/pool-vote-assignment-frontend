@@ -11,7 +11,7 @@ const Chat = () => {
   const { poolId } = useParams();
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
-  const socket = socketIOClient("http://localhost:5000");
+  const socket = socketIOClient("https://pool-vote-assignment-backend.onrender.com");
 
   useEffect(() => {
     const fetchMessages = async () => {

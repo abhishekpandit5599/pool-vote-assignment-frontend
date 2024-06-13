@@ -11,7 +11,7 @@ const PoolDetails = () => {
   const [pool, setPool] = useState(null);
   const [voted, setVoted] = useState(false);
   const [vote, setVote] = useState("");
-  const socket = socketIOClient("http://localhost:5000");
+  const socket = socketIOClient("https://pool-vote-assignment-backend.onrender.com");
 
   useEffect(() => {
     const fetchPool = async () => {
